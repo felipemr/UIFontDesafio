@@ -11,5 +11,15 @@
 @interface ViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UILabel *nome;
+@property (weak, nonatomic) IBOutlet UITextField *caixaTextoNome;
+
+
+
+- (IBAction)alterarNome:(id)sender;
+
+- (IBAction)mudarFonte:(id)sender;
+
+
 @end
 

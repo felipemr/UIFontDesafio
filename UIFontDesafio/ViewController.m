@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +23,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)alterarNome:(id)sender {
+    [_nome setText:[_caixaTextoNome text]];
+    [sender resignFirstResponder];
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [_caixaTextoNome resignFirstResponder];
+}
+
+- (IBAction)mudarFonte:(id)sender {
+    
+    [_nome setFont:[UIFont fontWithName:[sender currentTitle] size:14]];
+}
 @end
